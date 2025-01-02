@@ -42,7 +42,7 @@ local intermediates = {
 			return { value.X, value.Y }
 		end,
 		from = function(value: Intermediate): Vector2
-			return Vector2.new(table.unpack(value, 1, 2))
+			return Vector2.new(value[1], value[2])
 		end,
 	},
 
@@ -51,7 +51,7 @@ local intermediates = {
 			return { value.X, value.Y, value.Z }
 		end,
 		from = function(value: Intermediate): Vector3
-			return Vector3.new(table.unpack(value, 1, 3))
+			return Vector3.new(value[1], value[2], value[3])
 		end,
 	},
 
@@ -60,7 +60,7 @@ local intermediates = {
 			return { value.R, value.G, value.B }
 		end,
 		from = function(value: Intermediate): Color3
-			return Color3.new(table.unpack(value, 1, 3))
+			return Color3.new(value[1], value[2], value[3])
 		end,
 	},
 

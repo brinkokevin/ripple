@@ -1,6 +1,6 @@
 [package]
-name = "littensy/ripple"
-version = "0.9.1"
+name = "brinkokevin/ripple"
+version = "0.9.1-fork.1"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 exclude = ["**"]
